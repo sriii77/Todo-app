@@ -1,0 +1,162 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+input,
+select,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font family and background color */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f9fbfe;
+}
+
+/* Container styles */
+.todos-bg-container {
+    padding: 20px;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Typography styles */
+.todos-heading {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.todo-items-heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.todo-items-heading-subpart {
+    font-weight: 500;
+}
+
+/* Input styles */
+.full-width-input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e4e7eb;
+}
+
+.input-inline {
+    width: calc(33.3% - 10px);
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e4e7eb;
+}
+
+/* Button styles */
+.button {
+    color: white;
+    background-color: #4c63b6;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background-color: #405aa8;
+}
+
+/* Task item styles */
+.todo-card {
+    background-color: white;
+    border: 1px solid #e4e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-label {
+    font-size: 16px;
+    width: 100%;
+    white-space: pre-line;
+    word-break: break-all;
+    padding-left: 10px;
+}
+
+.edit-icon,
+.delete-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* Search bar styles */
+#searchBar {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #3b5372;
+    width: calc(100% - 30px);
+}
+
+/* Edit task popup styles */
+.edit-popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-popup-content label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+/* Checked task style */
+/* .checkbox-label.checked {
+    text-decoration: line-through;
+    color: #6c757d;
+} */
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-evenly;
+}
+
+
